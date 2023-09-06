@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Home</title>
+    {% include 'header.html' %}
+    {% include 'footer.html' %}
+    {% include 'user_home_nav.html'%}
+</head>
+		<div class="col-md-offset-3 col-md-5" style ="margin-top:380px">
+		
+     
+	
+		
+	</head>
+<body>
+<div class="user">
+<div class="tit">
+<h1>Employee Details</h1>
+</div>
+
+<form action="/emp" method="post" enctype="multipart/form-data">
+<div class="form">
+<div class="input_fild">
+<label>Employee Name</label>
+<input type="text"  name="ename">
+</div>
+
+<div class="input_fild">
+<label>Employee Id</label>
+<input type="text"  name="eid" >
+</div>
+
+<div class="input_fild">
+<label>Mobile Number</label>
+<input type="text"  name="contact" >
+</div>
+
+<div class="input_fild">
+<label>Email</label>
+<input type="text"  name="mail" >
+</div>
+
+<div class="input_fild1">
+<label>Address</label>
+
+<input type="text"  name="address" >
+</div>
+
+<div class="input_fild">
+<label>Qualification</label>
+<select name="degree" id="edu">
+<option value="default">select</option>
+<option value="be">B.E</option>
+<option value="me">M.E</option>
+<option value="mca">MCA</option>
+</select>
+</div>
+
+<div class="input_fild">
+<label>Joining Date</label>
+<input type="text" name="date" >
+</div>
+
+<div class="input_fild">
+<label>Programming Language</label>
+<input type="text"  name="lang" >
+</select>
+</div>
+
+
+<div class="input_fild2">
+<label>Profile pick</label>
+<input type="file" id="img" name="file" accept="image/*">
+</div>
+
+<div class="input_fild2">
+<label>Resume</label>
+<input type="file" id="myfile" name="resume">
+</div>
+<div class="btn">
+<input type="submit" class="btn btn-primary pull-right" name="emp" value="Submit">
+</btn>
+</btn>
+
+
+</div>
+
+
+
